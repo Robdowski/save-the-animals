@@ -5,6 +5,8 @@ import { getUser, getOrgs } from "../../actions";
 
 import axiosWithAuth from "../../utils/axiosWithAuth";
 
+import '../../css/AddCampaign.css'
+
 function AddCampaign(props) {
   const initialCampaign = {
     title: "",
@@ -53,7 +55,7 @@ function AddCampaign(props) {
       .catch(err => console.log(err));
   };
   return (
-    <div>
+    <div className='add-campaign-container'>
       <form onSubmit={handleSubmit} id='org-add-campaign'>
         <h1>Add A Campaign</h1>
         <label htmlFor="title">

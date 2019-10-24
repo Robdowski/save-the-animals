@@ -16,16 +16,69 @@
     height: 100vh;
 }
 
+.org-campaigns{
+    background-attachment: fixed;
+}
+
+.org-campaigns::after{
+    content:'';
+    background: url("../images/wolf.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.org-campaign-content{
+    position:relative;
+    z-index: 2;
+    width: 80vw;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.org-campaign-content::after{
+    content: "";
+    background: url("#") black;
+    opacity: 0.8;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.org-campaign-cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
 .search-form{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     position: absolute;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .sup-campaign-content{
+    position: relative;
     display:flex;
     flex-direction: column;
     justify-content: center;

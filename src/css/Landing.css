@@ -6,9 +6,9 @@
 .landing-container::after{
     content:'';
     background: url("../images/elephant.jpg") no-repeat;
-    background-size: cover;
+    background-size:cover;
     opacity: 0.8;
-    position:absolute;
+    position:fixed;
     top:0;
     bottom:0;
     left:0;
@@ -57,5 +57,11 @@
     .landing-container::after{
         background: url('../images/elephant_small.jpg') no-repeat;
         background-size: cover;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .landing-content{
+        height: 70%;
     }
 }

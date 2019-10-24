@@ -31,6 +31,8 @@ function Campaign(props) {
     } else {
     return (
         <div className='campaign-focus-container'>
+            <div className='org-individual-view'>
+            <h2>Your Active Campaign</h2>
            <OrgCampaignCard {...props} item={item} />
            <button onClick={(e) => {
                props.editItem(e, item)
@@ -39,7 +41,7 @@ function Campaign(props) {
            <button onClick={e => {
                props.handleDelete(e, item)
                props.history.push('/org-campaigns')
-           }}>Delete Campaign</button>
+           }}>Delete Campaign</button></div>
         </div>
     )
     }

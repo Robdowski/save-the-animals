@@ -22,7 +22,7 @@ export default function SupporterCampaignCard(props) {
                 <p>You're helping to save the {props.item.species}</p>
                 <p>Location: {props.item.location}</p>
                 <p>Urgency Level: {props.item.urgency}</p>
-                <div className={props.item.funding_received < 1000 ? 'funding low-funding' : props.item.funding_received < 5000 ? 'funding mid-funding' : 'funding high-funding'} style={props.item.funding_received < 2000 ? {width: '50px'} : {width:`${props.item.funding_received/25}px`}}>
+                <div className={props.item.funding_received < 1000 ? 'funding low-funding' : props.item.funding_received < 5000 ? 'funding mid-funding' : 'funding high-funding'} style={props.item.funding_received < 2000 ? {width: '70px'} : {width:`${props.item.funding_received/25}px`}}>
                 <p>{formatCurrency(props.item.funding_received, '$')}</p>
                 </div>
             </div>

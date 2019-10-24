@@ -21,7 +21,7 @@
     position: relative;
     opacity: 0.6;
     height: 150px;
-    width: 400px;
+    width: 100%;
 }
 
 .funding{
@@ -52,4 +52,10 @@
 
 .high-funding{
     background-color: green;
+}
+
+@media all and (max-width: 800){
+    .card-container{
+        width: 80%;
+    }
 }

@@ -8,7 +8,7 @@
     background: url("../images/rhino.jpg") no-repeat;
     background-size: cover;
     opacity: 0.8;
-    position:absolute;
+    position:fixed;
     top:0;
     bottom:0;
     left:0;
@@ -33,6 +33,18 @@ Form{
     width: 500px;
     position: relative;
     z-index: 2;
+}
+
+@media all and (max-width: 500px) {
+    .form-container{
+        width: 500px;
+    }
+    .register-form-container{
+        width:500px;
+    }
+    Form{
+        width: 80%;
+    }
 }
 
 Form::after{
@@ -75,7 +87,7 @@ Form input{
 @media all and (max-width: 1000px) {
     .content::after{
         background: url('../images/rhino_small.jpg') no-repeat;
-        background-size: cover;
+        background-size:cover;
     }
 }
 

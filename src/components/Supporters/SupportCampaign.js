@@ -26,11 +26,13 @@ function SupportCampaign(props) {
   } else {
     return (
       <div className='campaign-focus-container'>
+      <div className='org-individual-view'>
+      <h1>Active Campaign</h1>
         <SupporterCampaignCard {...props} item={item} />
         <button onClick={e => {
           routeToDonate(e, item)
           props.handleDonate(e, item)
-          }}>Donate</button>
+          }}>Donate</button></div>
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React from 'react'
 import '../css/Landing.css'
 
-export default function Landing() {
+
+function Landing() {
     return (
         <div className='landing-container'>
             <div className='landing-content'>
@@ -12,3 +13,7 @@ export default function Landing() {
         </div>
     )
 }
+
+
+
+export default Landing

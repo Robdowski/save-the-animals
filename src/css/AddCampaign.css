@@ -1,0 +1,37 @@
+.add-campaign-container{
+    display:flex;
+    align-items:center;
+    height: 80vh;
+}
+
+.add-campaign-container::after{
+    content:'';
+    background: url("../images/fox.jpg") no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
+
+.edit-campaign-container{
+    display:flex;
+    align-items:center;
+    height: 80vh;
+}
+
+.edit-campaign-container::after{
+    content:'';
+    background: url("../images/jellyfish.jpg") no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}

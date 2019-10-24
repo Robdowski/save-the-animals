@@ -51,7 +51,7 @@ function EditCampaign(props) {
     }
 
     return (
-        <div>
+        <div className='edit-campaign-container'>
             <form onSubmit={handleSubmit} id='org-edit-campaign'>
             <h1>Edit Campaign</h1>
                <label htmlFor='title'>Title: <input name='title' type='text' defaultValue={props.item.title} onChange={handleChanges} /></label>

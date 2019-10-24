@@ -13,10 +13,17 @@ function SupporterLogin(props) {
     const [user, setUser] = useState(initialUser)
 
     const handleChanges = e => {
+        if (e.target.name === 'username'){
+            setUser({
+              ...user,
+              [e.target.name] : e.target.value.toLowerCase()
+            })
+          } else {
         setUser({
             ...user,
             [e.target.name] : e.target.value
         })
+    }
     }
 
     const handleSubmit = e => {

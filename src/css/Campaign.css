@@ -6,6 +6,19 @@
     margin-top: 20px;
 }
 
+.campaign-focus-container::after{
+    content:'';
+    background: url("../images/bear.jpg") no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
+
 .campaign-focus-container button{
     width: 300px;
     height: 30px;
@@ -24,4 +37,40 @@
 .campaign-focus-container button:focus{
     outline: none;
     cursor: progress;
+}
+
+.org-individual-view{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 3%
+}
+
+.org-individual-view::after{
+    content: "";
+    background: url("#") black;
+    opacity: 0.8;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.org-individual-view .card-container{
+    align-self: center;
+}
+
+@media all and (max-width: 800px){
+    .org-individual-view{
+        margin: 0;
+        padding: 3%;
+        /* width: 80%; */
+    }
 }
